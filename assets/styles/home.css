@@ -74,17 +74,23 @@ body {
 
 .hero-left {
   width: 50%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-buttons {
+  margin-top: 40px;
 }
 
 .hero-right {
-  width: 30%;
+  width: 40%;
   background-image: url(/assets/images/strawberry.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   aspect-ratio: 1;
   border-radius: 30px;
-  margin-right: 90px;
 }
 
 .hero-buttons {
