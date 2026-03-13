@@ -161,68 +161,60 @@ body {
 }
 
 .products {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
 }
 
+
+
 .product-item {
-  width: 280px;
   background: #fff;
-  text-align: start;
-  border-radius: 15px;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .product-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 .product-cover {
   width: 100%;
-  height: 180px;
-  background: url("/assets/images/lemon.png") center/cover no-repeat;
-  text-align: right;
-}
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  }
 
-.product-cover span {
-  padding: 8px;
-  background: #ddddddb6;
-  border-radius: 6px;
-  text-align: center;
-}
+
+.product-cover.orange { background: url("/assets/images/orange-burst.png") center/cover no-repeat;}
+.product-cover.lemon { background: url("/assets/images/lemon-fresh.png") center/cover no-repeat;}
+.product-cover.grapefruit { background: url("/assets/images/grapefruit-splash.png") center/cover no-repeat;}
+.product-cover.citrusmix { background: url("/assets/images/citrus-mix.png") center/cover no-repeat;}
+
 
 .product-item h3 {
-  padding: 10px;
-  font-size: 18px;
+  margin-bottom: 6px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 .product-item p {
-  padding: 0 15px 10px;
   font-size: 14px;
   color: #666;
+  margin-bottom: 12px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
-.product-price {
-  font-size: 18px;
+.price {
   font-weight: bold;
-  margin-bottom: 10px;
+  color: #fec000;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
-button {
-  border: none;
-  padding: 10px 16px;
-  color: #fff;
-  background: #212121;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 25px;
-  transition: background 0.2s ease;
-}
 
 
