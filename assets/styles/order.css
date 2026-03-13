@@ -99,3 +99,105 @@ body {
   color: #fec000;
   text-decoration: underline;
 }
+
+
+.order {
+  display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 90vh; 
+}
+
+.order-form {
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    width: 70%;
+}
+
+.order-card {
+    background: var(--card);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 36px 28px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.brand p {
+    margin-top: 2px;
+    color: #000;
+    font-size: 0.95rem;
+}
+
+.form-div {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.form-message {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.form-message input {
+    height: 200px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    outline: none;
+    transition: 0.25s ease;
+    font-size: 1rem;
+    background: #fff;
+    padding: 14px 16px;
+}
+
+input:focus {
+    border-color: #fec000;
+    box-shadow: 0 0 0 1px #fec000;
+}
+
+.send-button {
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    background: #fec000;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.2s ease;
+    border-radius: 14px;
+}
+
+.send-button:hover {
+    background: #fede00;
+    transform: translateY(-1px);
+}

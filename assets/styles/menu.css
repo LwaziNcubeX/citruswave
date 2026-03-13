@@ -257,3 +257,23 @@ body {
   }
 
 }
+
+.cart-button {
+  font-size: larger;
+  width: 70px;
+  padding: 5px;
+  background: #fec000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.cart-button a {
+  color: #2a2a2a;
+  text-decoration: none;
+  margin-left: 3px;
+}
+
