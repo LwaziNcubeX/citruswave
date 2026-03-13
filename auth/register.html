@@ -1,65 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/styles/auth.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/styles/auth.css" />
     <title>Register</title>
-</head>
-<body>
+  </head>
+  <body>
     <main class="auth">
-        <section class="register-hero">
-            <div class="hero-content">
-<h1>CITRUSWAVE</h1>
-            <p>Sign up to continue and stay connected</p>
+      <section class="register-hero">
+        <div class="hero-content">
+          <h1>CITRUSWAVE</h1>
+          <p>Sign up to continue and stay connected</p>
+        </div>
+      </section>
+
+      <section class="auth-form">
+        <div class="auth-card">
+          <div class="brand">
+            <img
+              src="/assets/images/logo.svg"
+              alt="CitrusWave Logo"
+              height="45"
+            />
+
+            <p>Create an account</p>
+          </div>
+          <form>
+            <div class="form-div">
+              <label for="name"><img src="/assets/images/user.svg" /></label>
+              <input id="name" type="text" placeholder="Lwazi Ncube" required />
             </div>
-            
-        </section>
-
-        <section class="auth-form">
-            <div class="auth-card">
-                <div class="brand">
-                    <img src="/assets/images/logo.svg" alt="CitrusWave Logo" height="45" />
-                    
-                    <p>Create an account</p>
-                </div>
-                <form>
-                    <div class="form-div">
-                        <label for="name"><img src="/assets/images/phone.svg" ></label>
-                        <input id="name" type="text" placeholder="Lwazi Ncube" required>
-                    </div>
-                            <div class="form-div">
-                           <label for="email"><img src="/assets/images/phone.svg" ></label>
-                        <input id="email" type="email" placeholder="lwazincubex@example.com" required> 
-                        </div>
-                        <div class="form-div">
-                           <label for="phone"><img src="/assets/images/phone.svg"></label>
-                        <input id="phone" type="tel" placeholder="+263 XX XXX XXXX" required> 
-                        </div> 
-                        
-                    <div class="form-div">
-                        <label for="username"><img src="/assets/images/phone.svg" ></label>
-                        <input id="username" type="text" placeholder="lwazie" required>
-                    </div>
-                    <div class="form-div">
-                        <label for="password"><img src="/assets/images/phone.svg" ></label>
-                        <input id="password" type="password" placeholder="Enter your password" required>
-                    </div>
-
-                    <div class="options">
-<label class="remember-me">
-    <input type="checkbox">
-    Remember me
-</label>
-
-
-                    </div>
-                    <button type="submit" class="auth-button">Register</button>
-                </form>
-                <p class="signup-text">Already have an account? <a href="/auth/login.html">Sign In</a></p>
+            <div class="form-div">
+              <label for="email"><img src="/assets/images/mail.svg" /></label>
+              <input
+                id="email"
+                type="email"
+                placeholder="lwazincubex@example.com"
+                required
+              />
             </div>
-        </section>
+            <div class="form-div">
+              <label for="phone"><img src="/assets/images/phone.svg" /></label>
+              <input
+                id="phone"
+                type="tel"
+                placeholder="+263 XX XXX XXXX"
+                required
+              />
+            </div>
+
+            <div class="form-div">
+              <label for="username"
+                ><img src="/assets/images/user.svg"
+              /></label>
+              <input id="username" type="text" placeholder="lwazie" required />
+            </div>
+            <div class="form-div">
+              <label for="password"
+                ><img src="/assets/images/key-round.svg"
+              /></label>
+              <input
+                id="password"
+                type="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+
+            <div class="options">
+              <label class="remember-me">
+                <input type="checkbox" />
+                Remember me
+              </label>
+            </div>
+            <button type="submit" class="auth-button">Register</button>
+          </form>
+          <p class="signup-text">
+            Already have an account? <a href="/auth/login.html">Sign In</a>
+          </p>
+        </div>
+      </section>
     </main>
-    
-</body>
+  </body>
 </html>
