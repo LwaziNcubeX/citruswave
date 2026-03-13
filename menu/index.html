@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/styles/menu.css" />
+    <script src="/assets/js/cart.js"></script>
     <title>CitrusWave Menu</title>
   </head>
 
@@ -39,17 +40,36 @@
             <p>A crisp lemon juice with bright citrus flavor.</p>
             <div class="card-bottom">
               <span class="price">$4.50</span>
-              <button class="order-now">Add to Cart</button>
+              <button class="order-now">
+                <img
+                  src="/assets/images/cart.svg"
+                  alt="cart icon"
+                  height="18"
+                />
+                Add to cart
+              </button>
             </div>
           </div>
 
           <div class="product-item">
-            <div class="product-cover orange"></div>
+            <div class="product-cover orange">
+              <span class="price">$4.50</span>
+            </div>
             <h3>Orange Burst</h3>
             <p>Sweet and refreshing orange juice packed with vitamin C.</p>
             <div class="card-bottom">
               <span class="price">$4.50</span>
-              <button class="order-now">Add to Cart</button>
+              <button
+                class="order-now"
+                onclick="addToCart('Orange Bust, 4.50')"
+              >
+                <img
+                  src="/assets/images/cart.svg"
+                  alt="cart icon"
+                  height="18"
+                />
+                Add to cart
+              </button>
             </div>
           </div>
 
@@ -60,7 +80,14 @@
 
             <div class="card-bottom">
               <span class="price">$4.50</span>
-              <button class="order-now">Add to Cart</button>
+              <button class="order-now">
+                <img
+                  src="/assets/images/cart.svg"
+                  alt="cart icon"
+                  height="18"
+                />
+                Add to cart
+              </button>
             </div>
           </div>
 
@@ -70,7 +97,22 @@
             <p>A crisp lemon juice with bright citrus flavor.</p>
             <div class="card-bottom">
               <span class="price">$4.50</span>
-              <button class="order-now">Add to Cart</button>
+              <button
+                class="order-now"
+                onclick="addToCart('Orange Bust, 4.50')"
+              >
+                <img
+                  src="/assets/images/cart.svg"
+                  alt="cart icon"
+                  height="18"
+                />
+                Add to cart
+              </button>
+              <div class="quantinty-controls">
+                <button class="qty-btn minus">-</button>
+                <span class="qty">0</span>
+                <button class="qty-btn plus">+</button>
+              </div>
             </div>
           </div>
 
@@ -80,7 +122,14 @@
             <p>A crisp lemon juice with bright citrus flavor.</p>
             <div class="card-bottom">
               <span class="price">$4.50</span>
-              <button class="order-now">Add to Cart</button>
+              <button class="order-now">
+                <img
+                  src="/assets/images/cart.svg"
+                  alt="cart icon"
+                  height="18"
+                />
+                Add to cart
+              </button>
             </div>
           </div>
 
@@ -90,7 +139,14 @@
             <p>A crisp lemon juice with bright citrus flavor.</p>
             <div class="card-bottom">
               <span class="price">$4.50</span>
-              <button class="order-now">Add to Cart</button>
+              <button class="order-now">
+                <img
+                  src="/assets/images/cart.svg"
+                  alt="cart icon"
+                  height="18"
+                />
+                Add to cart
+              </button>
             </div>
           </div>
         </div>

@@ -278,21 +278,46 @@ body {
 }
 
 .order-now {
-  font-size: medium;
+  font-size: small;
+  margin: 8px;
   padding: 8px;
-  background: #aaa;
-  color:#2a2a2a;
+  background: #2a2a2a;
+  opacity: 0.9;
+  color:#fff;
   border: none;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 50px;
   transition: transform 0.2s ease, background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  gap: 8px;
 }
 
 .card-bottom {
   margin-bottom: 5px;
   display: flex;
-  gap: 20px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.qty-btn {
+  padding: 4px 7px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  border-radius: 50px;
+
+}
+
+.qty {
+  font-weight: bold;
+}
+
+.quantinty-controls {
+  display: none;
 }
 
