@@ -3,76 +3,125 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/styles/order.css" />
-    <title>Place your order</title>
+    <link rel="stylesheet" href="../assets/styles/order.css" />
+    <title>Place Your Order - CitrusWave</title>
   </head>
   <body>
     <nav class="navbar">
-      <img src="/assets/images/logo.svg" alt="CitrusWave Logo" height="46" />
+      <img src="../assets/images/logo.svg" alt="CitrusWave Logo" height="46" />
 
       <ul class="nav-menu">
-        <li><a href="/" class="nav-item">Home</a></li>
-        <li><a href="/menu/index.html" class="nav-item">Menu</a></li>
-        <li><a href="/about/index.html" class="nav-item">About Us</a></li>
-        <li><a href="/contact/index.html" class="nav-item">Contact Us</a></li>
+        <li><a href="../index.html" class="nav-item">Home</a></li>
+        <li><a href="../menu/index.html" class="nav-item">Menu</a></li>
+        <li><a href="../about/index.html" class="nav-item">About Us</a></li>
+        <li><a href="../contact/index.html" class="nav-item">Contact Us</a></li>
       </ul>
 
-      <button class="auth-button">
-        <a href="/auth/login.html">GET STARTED</a>
+      <button class="cart-button">
+        <a href="../menu/order.html">
+          My Cart (<span id="cart-count">0</span>)
+        </a>
       </button>
     </nav>
 
-    <main class="order">
-      <section class="order-form">
-        <div class="order-card">
-          <div class="brand">
-            <img
-              src="/assets/images/logo.svg"
-              alt="CitrusWave Logo"
-              height="45"
-            />
+    <main class="order-page">
+      <section class="order-hero">
+        <h1>Your Order</h1>
+        <p>Review your selected juices and complete your order.</p>
+      </section>
 
-            <p>Send Us a Message</p>
+      <section class="order-layout">
+        <div class="order-left">
+          <div class="order-card">
+            <div class="section-heading">
+              <h2>Cart Items</h2>
+              <p>Adjust quantities before checkout.</p>
+            </div>
+
+            <div class="cart-items" id="cart-items">
+              <div class="cart-item">
+                <div class="cart-item-image lemon"></div>
+
+                <div class="cart-item-details">
+                  <h3>Lemon Fresh</h3>
+                  <p>A crisp lemon juice with bright citrus flavor.</p>
+                  <span class="item-price">$4.50</span>
+                </div>
+
+                <div class="cart-item-actions">
+                  <div class="quantity-controls">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                  </div>
+                  <button class="remove-item">Remove</button>
+                </div>
+              </div>
+
+              <div class="cart-item">
+                <div class="cart-item-image orange"></div>
+
+                <div class="cart-item-details">
+                  <h3>Orange Burst</h3>
+                  <p>
+                    Sweet and refreshing orange juice packed with vitamin C.
+                  </p>
+                  <span class="item-price">$4.75</span>
+                </div>
+
+                <div class="cart-item-actions">
+                  <div class="quantity-controls">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">2</span>
+                    <button class="qty-btn plus">+</button>
+                  </div>
+                  <button class="remove-item">Remove</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <form>
-            <div class="form-div">
-              <label for="name"><img src="/assets/images/user.svg" /></label>
-              <input id="name" type="text" placeholder="Lwazi Ncube" required />
+
+          <div class="order-card">
+            <div class="section-heading">
+              <h2>Delivery Details</h2>
+              <p>Enter where and how you want your order delivered...</p>
             </div>
-            <div class="form-div">
-              <label for="email"><img src="/assets/images/mail.svg" /></label>
-              <input
-                id="email"
-                type="email"
-                placeholder="lwazincubex@example.com"
-                required
-              />
+          </div>
+
+        <aside class="order-right">
+          <div class="order-summary">
+            <div class="section-heading">
+              <h2>Order Summary</h2>
+              <p>Your total before placing the order.</p>
             </div>
 
-            <div class="form-div">
-              <label for="username"
-                ><img src="/assets/images/user.svg"
-              /></label>
-              <input
-                id="username"
-                type="text"
-                placeholder="Enter Your Name"
-                required
-              />
-            </div>
-            <div class="form-message">
-              <input
-                id="message"
-                type="text"
-                placeholder="Enter your message"
-                required
-              />
+            <div class="summary-line">
+              <span>Subtotal</span>
+              <span>$14.00</span>
             </div>
 
-            <button type="submit" class="send-button">Send Message</button>
-          </form>
-        </div>
+            <div class="summary-line">
+              <span>Delivery Fee</span>
+              <span>$2.00</span>
+            </div>
+
+            <div class="summary-line">
+              <span>Discount</span>
+              <span>$0.00</span>
+            </div>
+
+            <div class="summary-line total">
+              <span>Total</span>
+              <span>$16.00</span>
+            </div>
+
+            <button class="place-order-button">Place Order</button>
+
+          </div>
+        </aside>
       </section>
     </main>
+
+    <script src="../assets/js/cart.js"></script>
   </body>
 </html>

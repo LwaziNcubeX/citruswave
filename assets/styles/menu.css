@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "inter";
-  src: url(/assets/fonts/inter.ttf);
+  src: url(../fonts/inter.ttf);
   font-weight: normal;
   font-style: normal;
 }
@@ -161,12 +161,12 @@ body {
   }
 
 
-.product-cover.orange { background: url("/assets/images/orange-burst.png") center/cover no-repeat;}
-.product-cover.lemon { background: url("/assets/images/lemon-fresh.png") center/cover no-repeat;}
-.product-cover.grapefruit { background: url("/assets/images/grapefruit-splash.png") center/cover no-repeat;}
-.product-cover.tangerine { background: url("/assets/images/tangerine-glow.png") center/cover no-repeat;}
-.product-cover.citrusmix { background: url("/assets/images/citrusmix.png") center/cover no-repeat;}
-.product-cover.lime { background: url("/assets/images/lime-zing.png") center/cover no-repeat;}
+.product-cover.orange { background: url("../images/orange-burst.png") center/cover no-repeat;}
+.product-cover.lemon { background: url("../images/lemon-fresh.png") center/cover no-repeat;}
+.product-cover.grapefruit { background: url("../images/grapefruit-splash.png") center/cover no-repeat;}
+.product-cover.tangerine { background: url("../images/tangerine-glow.png") center/cover no-repeat;}
+.product-cover.citrusmix { background: url("../images/citrusmix.png") center/cover no-repeat;}
+.product-cover.lime { background: url("../images/lime-zing.png") center/cover no-repeat;}
 
 
 .product-item h3 {

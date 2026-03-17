@@ -6,7 +6,7 @@ function addToCart(name, price, button) {
     if(existingItem) {
         cart = cart.filter(item => item.name !== name)
         button.innerHTML = `
-      <img src="/assets/images/cart.svg" height="18">
+      <img src="../assets/images/cart.svg" height="18">
       Add to cart
     `
     } else {
@@ -64,7 +64,7 @@ function syncCartButtons() {
       button.classList.add("added")
     } else {
       button.innerHTML = `
-        <img src="/assets/images/cart.svg" alt="cart icon" height="18" />
+        <img src="../assets/images/cart.svg" alt="cart icon" height="18" />
         Add to cart
       `
       button.classList.remove("added")

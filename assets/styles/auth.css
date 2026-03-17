@@ -153,7 +153,7 @@ input:focus {
 
 .login-hero {
     position: relative;
-    background: url("/assets/images/grapefruit-splash.png") center/cover no-repeat;
+    background: url("../images/grapefruit-splash.png") center/cover no-repeat;
     display: flex;
     align-items: flex-end;
     padding: 40px;
@@ -161,7 +161,7 @@ input:focus {
 
 .register-hero {
     position: relative;
-    background: url("/assets/images/tangerine-glow.png") center/cover no-repeat;
+    background: url("../images/tangerine-glow.png") center/cover no-repeat;
     display: flex;
     align-items: flex-end;
     padding: 40px;

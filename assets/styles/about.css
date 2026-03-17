@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "inter";
-  src: url(/assets/fonts/inter.ttf);
+  src: url(../fonts/inter.ttf);
   font-weight: normal;
   font-style: normal;
 }
@@ -103,6 +103,9 @@ body {
 .about-us {
   text-align: center;
   margin: 40px;
+
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .about-us h1 {
